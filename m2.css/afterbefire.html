@@ -1,0 +1,56 @@
+.<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="normalixe.css">
+	<style type="text/css">
+		.container {
+			background: orange;
+			margin: 30px auto;
+			width:1000px;
+		}
+		.row{
+			background: #FF0000;
+			overflow:  auto;
+			padding: 20px 0;
+		}
+		.row::before{
+			content: " them vao phia sau ben trong the"
+			color: white;
+			clear: both;
+			display: block;
+		} 
+		.row::after{
+			 content: "Thêm vào phía sau bên trong thẻ";
+            color: white;
+            clear: both;
+            display: block;
+		}
+		
+        .row .col1 {
+            float: left;
+            min-height: 350px;
+            background: green;
+            color: white;
+            width: 33%;
+        }
+        .row .col2 {
+            float: right;
+            min-height: 350px;
+            background: blueviolet;
+            color: white;
+            width: 67%;
+        }
+	</style>
+
+</head>
+<body>
+	<h1> CSS ::before ::after </h1>
+	<p> :: được sử dụng như để thêm 1 phần nội dung có thể là rỗng vào bên trong selector ở phía đầu </p>
+	<p> :: after được sử dụng để thêm nội dung hoặc đinh dạng css vào bên trong selector vào phía cuối
+	 </p>
+	 <div class="container">
+	 	<div class="col1"> Column 1 </div>
+	 	<div class="col2"> column 2</div>
+</body>
+</html>
