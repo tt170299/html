@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <table style="width:100%">
+            <thead>
+                <tr>
+                    <td>Stt</td>
+                    <td>Tên</td>
+                    <td>Diện tích</td>
+                </tr>
+            </thead>
+            <tbody id="content">
+                    <tr>
+                        <td>1</td>
+                        <td>ha noi</td>
+                        <td>100</td>
+                    </tr>
+                </tbody>
+        </table>
+        <div>
+                <button onclick="generateProvince()">Tạo data</button>
+        </div>
+    </div>
+    <script>
+        // for ( var i = 0; i <=10; i++) {
+        //     console.log(i);
+        // }
+
+        function generateProvince() {
+            var html = '';
+
+            // khởi tạo đối tượng
+            var hanoi = {id:1, name:'ha noi', s:100};
+            var hcm = {id:2, name:'ho chi minh', s: 200};
+            var bd = {id:3, name:'binh duong', s:150}
+            var cm = {id:4, name:'ca mau', s:120}
+            var vl = {id:5, name:'vinh long', s:130}
+            //binh duong, ca mau, long an, vinh long, can tho
+            var province = [hanoi, hcm, bd, cm, vl];
+            var i = 0;
+            do {
+                //console.log(i);
+                
+                html += '<tr>';
+                html += '<td>' + province[i].id + '</td>';
+                html += '<td>' + province[i].name + '</td>';
+                html += '<td>' + province[i].s + '</td>';
+                html += '</tr>';
+                i ++;
+                
+            } while (i < province.length)
+            document.getElementById('content').innerHTML = html;
+        }
+    </script>
+</body>
+</html>

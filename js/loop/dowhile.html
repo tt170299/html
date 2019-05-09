@@ -1,0 +1,44 @@
+.<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<div>
+	<button onclick="generateProvince()"> tạo data</button>
+</div>
+</div>
+<div style="color: red">
+	<h1> vòng lăp while chỉ chạy khi điều kiện trong ngoặc đúng</h1>
+	<h1> vòng lặp do... while sẽ chạy khi điều kiện trong ngoặc đúng nhưng khi điều kiện sau nó chỉ chạy một lần đầu tiên rồi dừng lại</h1>
+</div>
+<script type="text/javascript">
+	 function generateProvince(){
+		var html="";
+		// khởi tạo đối tượng
+		var hanoi= { id:1, name:"ha noi" ,s:100};
+		var hcm={ id:2,name:"ho chi minh",s:100};
+		// binh duongm ca mau,long an, vinh long, can tho
+		var province=[hanoi,hcm,tuyenquang];
+		var tuyenquang={ id:3, name: 'tuyenquang',s:150};
+		var i=0;
+   do{
+   	
+   	 html += '<tr>';
+                html += '<td>' + province[i].id + '</td>';
+                html += '<td>' + province[i].name + '</td>';
+                html += '<td>' + province[i].s + '</td>';
+                html += '</tr>';
+                i++;
+                
+            }
+     while(i< province.length)
+
+document.getElementById('content').innerHTML =html;
+}
+   
+
+</script>
+</body>
+</html>

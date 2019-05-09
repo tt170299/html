@@ -1,0 +1,23 @@
+.<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1> phương thức html() trong JQ sexlaays đi văn bản trong selector được chọn <p> thẻ p </p> </h1>
+<p> html() lấy tất cả code html và text bên trong selector được chọn </p>
+<button id=" target"> lấy html</button>
+<scrpit src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymou"> </scrpit>
+<script type="text/javascript">
+	$(document).ready(function() {
+        $("#target").on("click", function () {
+            var html = $("h1").html();
+            alert(html);
+        });
+    });
+
+</script>
+</body>
+</html>

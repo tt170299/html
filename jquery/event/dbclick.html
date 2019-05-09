@@ -1,0 +1,22 @@
+.<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1> double click </h1>
+<button id="eclick"> click vào đây</button>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		$("#eclick").dblclick(function(){
+  			alert("trigger double click");
+  			$("p").html(" sự kiện double click");
+  		})
+
+  	})
+  </script>
+</body>
+</html>

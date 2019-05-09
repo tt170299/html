@@ -1,0 +1,29 @@
+.<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1> mouseleave và mouseeter </h1>
+<div id="target"> nội dung thẻ div </div>
+<p>mouseeter là di chuột vào </p>
+<p> mouseleave là di chuột ra </p>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+  	$(document).ready(funtion(){
+  		// funtion() {}== callback
+  		$("target").mouseenter(funtion(){
+  			// this == #target
+  			$(this).css("background","green");
+  		});
+  		 $("#target").mouseleave(function () {
+            $(this).css("background", "#FFF");
+        })
+  	})
+  </script>
+</body>
+</html>

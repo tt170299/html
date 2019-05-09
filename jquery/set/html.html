@@ -1,0 +1,21 @@
+.<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Phương thức html() trong JQ sẽ lấy văn bản trong selector được chọn<p>Thẻ p</p></h1>
+<p>html() lấy tất cả code html và text bên trong selector được chọn</p>
+<button id="target"> run</button>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymou"></script>
+  <script type="text/javascript">
+  	$(document).ready(funtion(){
+  		$("#target").on("click",funtion(){
+  			$("h1").html("<p style='color:red'> thẻ p </p>);
+  		})
+  	})
+  </script>
+</body>
+</html>
